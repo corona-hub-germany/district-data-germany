@@ -1,6 +1,6 @@
 {
   "name": "district-data-germany",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "geo information about germany's districts",
   "author": "Alexander Wunschik <dev@wunschik.net>",
   "license": "AGPL-3.0-or-later",
@@ -13,7 +13,7 @@
     "covid-19",
     "data"
   ],
-  "main": "src/districtTools.js",
+  "main": "src/Districts.js",
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
