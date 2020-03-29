@@ -1,0 +1,29 @@
+{
+  "name": "district-data-germany",
+  "version": "1.0.0",
+  "description": "geo information about germany's districts",
+  "author": "Alexander Wunschik <dev@wunschik.net>",
+  "license": "AGPL-3.0-or-later",
+  "homepage": "https://github.com/mojoaxel/district-data-germany#readme",
+  "bugs": {
+    "url": "https://github.com/mojoaxel/district-data-germany/issues"
+  },
+  "keywords": [
+    "corona",
+    "covid-19",
+    "data"
+  ],
+  "main": "src/districtTools.js",
+  "scripts": {
+    "start": "node index.js",
+    "postinstall": "node updateData.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mojoaxel/district-data-germany.git"
+  },
+  "dependencies": {
+    "fs-extra": "^9.0.0",
+    "geolib": "^3.2.1"
+  }
+}
