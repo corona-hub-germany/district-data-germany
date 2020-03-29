@@ -1,6 +1,6 @@
 {
   "name": "district-data-germany",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "geo information about germany's districts",
   "author": "Alexander Wunschik <dev@wunschik.net>",
   "license": "AGPL-3.0-or-later",
@@ -15,7 +15,8 @@
   ],
   "main": "src/districtTools.js",
   "scripts": {
-    "start": "node index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "postinstall": "node updateData.js"
   },
   "repository": {
@@ -24,6 +25,7 @@
   },
   "dependencies": {
     "fs-extra": "^9.0.0",
-    "geolib": "^3.2.1"
+    "geolib": "^3.2.1",
+    "jest": "^25.2.3"
   }
 }

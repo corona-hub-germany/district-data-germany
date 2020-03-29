@@ -1,21 +1,30 @@
 # district-data-germany
 
+> WARNING!! MultiPolygon support is still very buggy! Complex results may be wrong!
+
 ## Functions 
 
-### getDistrictData()
+### Districts.init() [ASYNC]
+
+load the dataset into memory.
+
+### Districts.getDistrictData()
 
 Return the complete dataset. This is mostly used interally.
 
-### getDistrictByPoint(lat, lon)
+### Districts.getDistrictByPoint(lat, lon)
 
 Return the district data that contains the given position or `null` if the point is not in germany.
 
 #### Example
 
 ```js
-const { getDistrictByPoint } = require('district-data-germany');
+const Districts = require('district-data-germany');
 
-const district = await getDistrictByPoint(49.4767969145344, 10.9835363685);
+const districts = new Districts();
+await districts.init();
+
+const district =.districts.getDistrictByPoint(49.4767969145344, 10.9835363685);
 console.log(district);
 ```
 
